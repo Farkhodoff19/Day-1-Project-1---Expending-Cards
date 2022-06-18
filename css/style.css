@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-transform: uppercase;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/rog-republic-of-gamers-asus.jpg);
+}
+
+.container {
+  display: flex;
+  width: 80vw;
+}
+
+
+.panel {
+  background-size: cover 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 36px;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.active {
+  flex: 5;
+}
+
+.active h3 {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vh;
+  }
+
+  .panel:nth-of-type(2),
+  .panel:nth-child(5) {
+    display: none;
+  }
+}
+
+.gta {
+  background-size: cover;
+  background-image: url(../images/capsule_616x353.jpg);
+}
+
+.fifa {
+  background-size: cover;
+  background-image: url(../images/maxresdefault.jpg);
+}
+
+.csgo {
+  background-size: cover;
+  background-image: url(../images/CS-Go-1084x570.jpg);
+}
+
+.spider {
+  background-size: cover;
+  background-image: url(../images/header.jpg);
+}
+
+.dota {
+  background-size: cover;
+  background-image: url(../images/dota-2_2414371.jpg);
+}
